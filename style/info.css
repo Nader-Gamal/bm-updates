@@ -1,0 +1,16 @@
+h2 {
+  color: #871e35;
+}
+ul {
+  margin-right: 150px;
+}
+
+ul li {
+  padding-top: 12px;
+}
+
+@media (max-width: 767px) {
+  ul {
+    margin-right: 20px;
+  }
+}

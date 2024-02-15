@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BM Updates</title>
+    <link rel="stylesheet" href="./home style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/quizz.css" />
+    <link rel="stylesheet" type="text/css" href="./home style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2655b3b7cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="loading-slide fixed-top bottom-0 bg-white justify-content-center align-items-center"
+    >
+      <i class="fa-solid fa-spinner fa-spin-pulse fa-7x"></i>
+    </div>
+    <nav class="navbar navbar-expand-lg shadow-lg">
+      <div class="container">
+        <a class="logo" href="./home.html"
+          ><img src="./imgs/main-logo.png" alt="bm logo" class="main-logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- tabs -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-lg-0 icon-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-center home"
+                aria-current="page"
+                href="./home.html"
+              >
+                <h6>اخر التحديثات</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-center DealyInfo"
+                aria-current="page"
+                href="#dealyInfo"
+              >
+                <h6>معلومة كل يوم</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-center"
+                aria-current="page"
+                href="./quizz.html"
+              >
+                <h6>الامتحان اليومي</h6>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-center"
+                aria-current="page"
+                href="./ahsbly.html"
+              >
+                <h6>احسبلي</h6>
+              </a>
+            </li>
+          </ul>
+          <!-- profile &  notification -->
+          <div class="d-flex pe-5 pt-3 align-items-center z-3 me-auto prof-not">
+            <div class="d-flex flex-column position-relative">
+              <div
+                class=""
+                alt="profile"
+                data-bs-toggle="collapse"
+                href="#collapseExample1"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                <div>
+                  <i
+                    href="#"
+                    class="notification fa-regular fa-bell fa-2xl bell-icon pe-5"
+                  >
+                    <span class="badge place">3</span>
+                  </i>
+                </div>
+              </div>
+              <div
+                class="collapse position-absolute profile1 z-3"
+                id="collapseExample1"
+              >
+                <div class="card card-body shadow-sm card-txt">
+                  <div class="alert alert-success text-center" role="alert">
+                    اصدار شهدات طلعت حرب 4
+                  </div>
+                  <div class="alert alert-success text-center" role="alert">
+                    تعديل حدود استخدام البطاقات الائتمانية
+                  </div>
+                  <div class="alert alert-success text-center" role="alert">
+                    عروض التقسيط بدون فوايد
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex flex-column position-relative">
+              <div
+                class="prof-img w-100"
+                alt="profile"
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+                role="button"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div
+                class="collapse position-absolute profile"
+                id="collapseExample"
+              >
+                <div class="card card-body shadow-sm card-txt">
+                  <div class="d-flex justify-content-end">
+                    <div
+                      class="px-3 mt-1 d-flex flex-column justify-content-start"
+                    >
+                      <h5 class="user-name">Nader Gamal</h5>
+                      <p class="user-role">Agent</p>
+                    </div>
+                    <div class="prof-img">
+                      <i class="fa-solid fa-user"></i>
+                    </div>
+                  </div>
+                  <div class="_container">
+                    <div class="calendar">
+                      <div class="front">
+                        <div class="current-date"></div>
+
+                        <div class="current-month">
+                          <div
+                            class="week-days d-flex justify-content-center text-white"
+                          >
+                            <p class="px-2">SUN</p>
+                            <p class="px-2">MON</p>
+                            <p class="px-2">TUE</p>
+                            <p class="px-2">WED</p>
+                            <p class="px-2">THU</p>
+                            <p class="px-2">FRI</p>
+                            <p class="px-2">SAT</p>
+                          </div>
+
+                          <div class="weeks">
+                            <div class="first">
+                              <span class="last-month">28</span>
+                              <span class="last-month">29</span>
+                              <span class="last-month">30</span>
+                              <span class="last-month">31</span>
+                              <span>01</span>
+                              <span>02</span>
+                              <span>03</span>
+                            </div>
+
+                            <div class="second">
+                              <span>04</span>
+                              <span>05</span>
+                              <span class="event">06</span>
+                              <span>07</span>
+                              <span>08</span>
+                              <span>09</span>
+                              <span>10</span>
+                            </div>
+
+                            <div class="third">
+                              <span>11</span>
+                              <span>12</span>
+                              <span>13</span>
+                              <span>14</span>
+                              <span class="active">15</span>
+                              <span>16</span>
+                              <span>17</span>
+                            </div>
+
+                            <div class="fourth">
+                              <span>18</span>
+                              <span>19</span>
+                              <span>20</span>
+                              <span>21</span>
+                              <span>22</span>
+                              <span>23</span>
+                              <span>24</span>
+                            </div>
+
+                            <div class="fifth">
+                              <span>25</span>
+                              <span>26</span>
+                              <span>27</span>
+                              <span>28</span>
+                              <span>29</span>
+                              <span class="last-month">01</span>
+                              <span class="last-month">02</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="back">
+                        <div class="info">
+                          <div
+                            class="d-flex flex-row justify-content-between flex-row-reverse"
+                          >
+                            <p class="info-date">Site: <span>Dokki</span></p>
+                            <p class="info-time">Floor: <span>4</span></p>
+                          </div>
+                          <div
+                            class="d-flex flex-row justify-content-between flex-row-reverse mb-3"
+                          >
+                            <p>
+                              Seat:
+                              <span>A-4</span>
+                            </p>
+                            <p>Statue: <span>No Issue</span></p>
+                          </div>
+                          <div class="observations">
+                            <p class="text-center">
+                              Coffe Break:
+                              <span>7 PM - 7:15 PM</span>
+                            </p>
+                          </div>
+                          <div class="observations">
+                            <p class="text-center">
+                              Lunch Break:
+                              <span>10 PM - 10:30 PM</span>
+                            </p>
+                          </div>
+                          <div class="observations">
+                            <p class="text-center">
+                              Coffe Break:
+                              <span>12 AM - 12:30 AM</span>
+                            </p>
+                          </div>
+                          <div class="my-numbers">
+                            <div
+                              class="observations aht pt-3 d-flex justify-content-between"
+                            >
+                              <p>
+                                Acc AHT:
+                                <span>268</span>
+                              </p>
+                              <p>
+                                Target AHT:
+                                <span>270</span>
+                              </p>
+                            </div>
+                            <div
+                              class="observations csat d-flex justify-content-between"
+                            >
+                              <p>
+                                Acc csat:
+                                <span>92%</span>
+                              </p>
+                              <p>
+                                Target csat:
+                                <span>85%</span>
+                              </p>
+                            </div>
+                            <div
+                              class="observations csat d-flex justify-content-between"
+                            >
+                              <p>
+                                Complines:
+                                <span>100%</span>
+                              </p>
+                              <p>
+                                End User:
+                                <span>100%</span>
+                              </p>
+                            </div>
+                            <div
+                              class="observations quality d-flex justify-content-between"
+                            >
+                              <p>
+                                Bussiness:
+                                <span>100%</span>
+                              </p>
+                              <p>
+                                Non Critical:
+                                <span>100%</span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="actions">
+                          <button class="save">
+                            Back <i class="ion-checkmark"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex pe-3">
+              <a href="./index.html">
+                <i
+                  class="fa-solid fa-arrow-right-from-bracket fa-2xl logout"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container my-5">
+      <div class="quiz-container" id="quiz">
+        <div class="quiz-header"></div>
+        <div class="quiz-body">
+          <h5 id="question">Question Text</h5>
+          <ul>
+            <li>
+              <input type="radio" name="answer" id="a" class="answer" />
+              <label for="a" id="a_text">Questions</label>
+            </li>
+            <li>
+              <input type="radio" name="answer" id="b" class="answer" />
+              <label for="b" id="b_text">Questions</label>
+            </li>
+          </ul>
+        </div>
+        <div class="quiz-footer">
+          <div class="quiz-details"></div>
+          <button type="button" id="btn">Submit</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/Jquery.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/quizz.js"></script>
+  </body>
+</html>

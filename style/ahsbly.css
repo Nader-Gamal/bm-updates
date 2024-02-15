@@ -1,0 +1,21 @@
+.bacDiv h3 {
+  color: #fff;
+  text-align: center;
+  max-width: 350px;
+}
+
+.selction {
+  background-color: #f0f0f0;
+  width: 360px;
+  height: 550px;
+}
+.options {
+  background-color: #871e35;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .bacDiv {
+    display: none;
+  }
+}

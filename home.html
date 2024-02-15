@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BM Updates</title>
+    <link rel="stylesheet" href="./home style/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./home style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/2655b3b7cf.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="loading-slide fixed-top bottom-0 bg-white justify-content-center align-items-center"
+    >
+      <i class="fa-solid fa-spinner fa-spin-pulse fa-7x"></i>
+    </div>
+    <div class="all-site">
+          <!-- nav bar -->
+      <nav class="navbar navbar-expand-lg shadow-lg">
+        <div class="container">
+          <a class="logo" href="./home.html"
+            ><img src="./imgs/main-logo.png" alt="bm logo" class="main-logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- tabs -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-lg-0 icon-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-center home"
+                  aria-current="page"
+                  href="./home.html"
+                >
+                  <h6>اخر التحديثات</h6>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-center DealyInfo"
+                  aria-current="page"
+                  href="#dealyInfo"
+                >
+                  <h6>معلومة كل يوم</h6>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-center"
+                  aria-current="page"
+                  href="./quizz.html"
+                >
+                  <h6>الامتحان اليومي</h6>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-center"
+                  aria-current="page"
+                  href="./ahsbly.html"
+                >
+                  <h6>احسبلي</h6>
+                </a>
+              </li>
+            </ul>
+            <!-- profile &  notification -->
+            <div class="d-flex pe-5 pt-3 align-items-center z-3 me-auto prof-not">
+              <div class="d-flex flex-column position-relative">
+                <div
+                  class=""
+                  alt="profile"
+                  data-bs-toggle="collapse"
+                  href="#collapseExample1"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                <div>
+                  <i
+                    href="#"
+                    class="notification fa-regular fa-bell fa-2xl bell-icon pe-5"
+                  >
+                    <span class="badge place">3</span>
+                  </i>
+                </div>
+                </div>
+                <div
+                  class="collapse position-absolute profile1 z-3"
+                  id="collapseExample1"
+                >
+                <div class="card card-body shadow-sm card-txt">
+                  <div class="alert alert-success text-center" role="alert">
+                    اصدار شهدات طلعت حرب 4
+                  </div>
+                  <div class="alert alert-success text-center" role="alert">
+                    تعديل حدود استخدام البطاقات الائتمانية
+                  </div>
+                  <div class="alert alert-success text-center" role="alert">
+                    عروض التقسيط بدون فوايد
+                  </div>  
+                </div>
+                </div>
+              </div>
+              <div class="d-flex flex-column position-relative">
+                <div
+                  class="prof-img w-100"
+                  alt="profile"
+                  data-bs-toggle="collapse"
+                  href="#collapseExample"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <div
+                  class="collapse position-absolute profile"
+                  id="collapseExample"
+                >
+                  <div class="card card-body shadow-sm card-txt">
+                    <div class="d-flex justify-content-end">
+                      <div
+                        class="px-3 mt-1 d-flex flex-column justify-content-start"
+                      >
+                        <h5 class="user-name">Nader Gamal</h5>
+                        <p class="user-role">Agent</p>
+                      </div>
+                      <div class="prof-img">
+                        <i class="fa-solid fa-user"></i>
+                      </div>
+                    </div>
+                    <div class="_container">
+                      <div class="calendar">
+                        <div class="front">
+                          <div class="current-date"></div>
+
+                          <div class="current-month">
+                            <div
+                              class="week-days d-flex justify-content-center text-white"
+                              >
+                              <p class="px-2">SAT</p>
+                              <p class="px-2">FRI</p> 
+                              <p class="px-2">THU</p>
+                              <p class="px-2">WED</p>
+                              <p class="px-2">TUE</p>
+                              <p class="px-2">MON</p>
+                              <p class="px-2">SUN</p>
+                            </div>
+
+                            <div class="weeks">
+                              <div class="first">
+                                <span class="last-month">28</span>
+                                <span class="last-month">29</span>
+                                <span class="last-month">30</span>
+                                <span class="last-month">31</span>
+                                <span>01</span>
+                                <span>02</span>
+                                <span>03</span>
+                              </div>
+
+                              <div class="second">
+                                <span>04</span>
+                                <span>05</span>
+                                <span class="event">06</span>
+                                <span>07</span>
+                                <span>08</span>
+                                <span>09</span>
+                                <span>10</span>
+                              </div>
+
+                              <div class="third">
+                                <span >11</span>
+                                <span>12</span>
+                                <span>13</span>
+                                <span>14</span>
+                                <span class="active">15</span>
+                                <span>16</span>
+                                <span>17</span>
+                              </div>
+
+                              <div class="fourth">
+                                <span>18</span>
+                                <span>19</span>
+                                <span>20</span>
+                                <span>21</span>
+                                <span>22</span>
+                                <span>23</span>
+                                <span>24</span>
+                              </div>
+
+                              <div class="fifth">
+                                <span>25</span>
+                                <span>26</span>
+                                <span>27</span>
+                                <span>28</span>
+                                <span>29</span>
+                                <span class="last-month">01</span>
+                                <span class="last-month">02</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="back">
+                          <div class="info">
+                            <div
+                              class="d-flex flex-row justify-content-between flex-row-reverse"
+                            >
+                              <p class="info-date">Site: <span>Dokki</span></p>
+                              <p class="info-time">Floor: <span>4</span></p>
+                            </div>
+                            <div
+                              class="d-flex flex-row justify-content-between flex-row-reverse mb-3"
+                            >
+                              <p>
+                                Seat:
+                                <span>A-4</span>
+                              </p>
+                              <p>Statue: <span>No Issue</span></p>
+                            </div>
+                            <div class="observations">
+                              <p class="text-center">
+                                Coffe Break:
+                                <span>7 PM - 7:15 PM</span>
+                              </p>
+                            </div>
+                            <div class="observations">
+                              <p class="text-center">
+                                Lunch Break:
+                                <span>10 PM - 10:30 PM</span>
+                              </p>
+                            </div>
+                            <div class="observations">
+                              <p class="text-center">
+                                Coffe Break:
+                                <span>12 AM - 12:30 AM</span>
+                              </p>
+                            </div>
+                            <div class="my-numbers">
+                              <div
+                                class="observations aht pt-3 d-flex justify-content-between"
+                              >
+                                <p>
+                                  Acc AHT:
+                                  <span>268</span>
+                                </p>
+                                <p>
+                                  Target AHT:
+                                  <span>270</span>
+                                </p>
+                              </div>
+                              <div
+                                class="observations csat d-flex justify-content-between"
+                              >
+                                <p>
+                                  Acc csat:
+                                  <span>92%</span>
+                                </p>
+                                <p>
+                                  Target csat:
+                                  <span>85%</span>
+                                </p>
+                              </div>
+                              <div
+                                class="observations csat d-flex justify-content-between"
+                              >
+                                <p>
+                                  Complines:
+                                  <span>100%</span>
+                                </p>
+                                <p>
+                                  End User:
+                                  <span>100%</span>
+                                </p>
+                              </div>
+                              <div
+                                class="observations quality d-flex justify-content-between"
+                              >
+                                <p>
+                                  Bussiness:
+                                  <span>100%</span>
+                                </p>
+                                <p>
+                                  Non Critical:
+                                  <span>100%</span>
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="actions">
+                            <button class="save">
+                              Back <i class="ion-checkmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex pe-3">
+                <a href="./index.html">
+                  <i
+                    class="fa-solid fa-arrow-right-from-bracket fa-2xl logout"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section id="header" class="container my-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- header -->
+            <section id="updates">
+              <div class="update-text">
+                <h5 class="sub-tiltle py-3">اهم تحديثات الاسبوع</h5>
+                <h2 class="tittle">
+                  شهدات طلعت حرب 4, عروض التقسيط بدون فوايد بمصروفات اداريه,
+                  تعديل حدود الاستخدام لبطاقات الائتمان
+                </h2>
+              </div>
+              <div id="carouselExampleCaptions" class="carousel slide py-2">
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide-to="3"
+                    aria-label="Slide 4"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <a href="./info.html">
+                      <img
+                        src="./imgs/Talaat 7arb Inner banner AR.jpg"
+                        class="d-block w-100 rounded-3"
+                        alt="slide-1"
+                      />
+                    </a>
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./imgs/update-1 (2).jpg"
+                      class="d-block w-100 rounded-3"
+                      alt="slide-2"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./imgs/update-2.jpg"
+                      class="d-block w-100 rounded-3"
+                      alt="slide-3"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./imgs/update-3.jpg"
+                      class="d-block w-100 rounded-3"
+                      alt="slide-4"
+                    />
+                    <div class="carousel-caption d-none d-md-block"></div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </section>
+            <section id="dealyInfo" class="my-5">
+              <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      ايقاف استخدام بطاقات بنك مصر مع مواقع PayPal - Skrill - Paioneer
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      إعتبارًا من تاريخ معين، تم اتخاذ قرار بوقف استخدام بطاقات بنك مصر مع بعض المواقع المالية الإلكترونية مثل PayPal وSkrill وPaioneer. هذا القرار قد يكون نتيجة لسياسات البنك أو لأسباب أمان محددة.
+
+                      تعتبر هذه الخطوة جزءًا من إجراءات الحماية والتأمين التي يقوم بها البنك لضمان أمان حسابات عملائه وتقليل مخاطر الاحتيال الإلكتروني. يُفضل دائمًا للعملاء التحقق من السياسات المصرفية والتحديثات الأمنية الخاصة بالبنك لفهم التغييرات والتأكد من أي تأثير على استخدام بطاقاتهم.
+                      
+                      يفضل للأفراد الذين يعتمدون على استخدام بطاقات بنك مصر مع تلك المنصات التحقق مع خدمة العملاء في البنك للحصول على توضيحات أو تفاصيل إضافية حول هذا القرار واستفسار حول البدائل المتاحة لإجراء المعاملات المالية عبر الإنترنت.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      معلومة اليوم التالي
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      معلومة اليوم التالي
+
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+      </section>
+      <footer class="p-3 mt-3 bg-black text-white">
+        <p class="text-center">All Rights Rservied For Banque Misr <strong>Design and Developed by Nader Gamal And Ayman </strong></p>
+      </footer>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/Jquery.js"></script>
+    <script src="./js/home.js"></script>
+  </body>
+</html>
